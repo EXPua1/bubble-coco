@@ -1,15 +1,19 @@
 .header {
-  padding: 20px 0;
   position: relative;
   background: rgba(18, 19, 31, 0.6);
-  z-index: 223;
 }
 
 .nav-list {
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #fff;
 
   // @include media(tablet) {
   //   justify-content: flex-start;

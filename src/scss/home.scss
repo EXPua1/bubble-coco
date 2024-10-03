@@ -7,9 +7,17 @@
   color: white; /* Цвет текста на секции */
 }
 .section_container {
-  margin-top: -144px;
+  margin-top: -65px;
 }
 
-.section {
-  padding-top: 0;
+.home_title {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 1.5;
+  color: #ff5b02;
+  padding-top: 150px;
+}
+.home_accent {
+  color: #fff;
 }
