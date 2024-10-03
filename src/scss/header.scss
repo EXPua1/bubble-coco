@@ -1,20 +1,27 @@
 .header {
   padding: 20px 0;
+  position: relative;
+  background: rgba(18, 19, 31, 0.6);
+  z-index: 223;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 32px;
 
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
+  // @include media(tablet) {
+  //   justify-content: flex-start;
+  // }
 
-  @include media(desktop) {
-    justify-content: flex-end;
-  }
+  // @include media(desktop) {
+  //   justify-content: flex-end;
+  // }
+}
+.container_inner {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-link {
