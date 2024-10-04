@@ -1,19 +1,21 @@
 .header {
-  position: relative;
   background: rgba(18, 19, 31, 0.6);
+  border-bottom: 1px solid #ff5b02;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-list {
-  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 40px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.44444;
   color: #fff;
+  padding: 19px 0 19px 0;
 
   // @include media(tablet) {
   //   justify-content: flex-start;
@@ -23,9 +25,19 @@
   //   justify-content: flex-end;
   // }
 }
+.nav-list_item {
+  border: 1px solid transparent; /* Прозрачная граница заранее */
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+.nav-list_item:hover {
+  border: 1px solid #ff5b02;
+  border-radius: 8px;
+}
 .container_inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-link {

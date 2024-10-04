@@ -5,19 +5,84 @@
   height: 600px; /* Задайте желаемую высоту */
 
   color: white; /* Цвет текста на секции */
-}
-.section_container {
-  margin-top: -65px;
+  position: relative;
+  margin-top: -73px !important;
+  z-index: 0;
 }
 
 .home_title {
   font-family: 'Baloo 2', sans-serif;
   font-weight: 800;
-  font-size: 72px;
+  font-size: 60px;
   line-height: 1.5;
   color: #ff5b02;
   padding-top: 150px;
+  margin-bottom: 16px;
+  max-width: 436px;
 }
 .home_accent {
   color: #fff;
+}
+.home_par {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.54545;
+  letter-spacing: 0.01em;
+  color: #fff;
+  max-width: 436px;
+}
+.google_btn {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  max-width: 198px;
+
+  cursor: pointer;
+}
+
+.btn_img {
+  margin-right: 10px;
+}
+
+.btn_img svg {
+}
+
+.get_btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #111;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.get_gl {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #111;
+}
+
+/* Для правильного позиционирования текста и иконки */
+.btn_par {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.google_btn:hover {
+  background: #111;
+  color: #f8f8f8;
+}
+
+/* Для изменения цвета текста при ховере */
+.google_btn:hover .get_btn,
+.google_btn:hover .get_gl {
+  color: #f8f8f8;
 }
