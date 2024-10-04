@@ -1,12 +1,12 @@
 .home_section {
-  background: url(../img/home/baner.png) no-repeat center center;
+  background: url(../img/home/baner-mob.jpg) no-repeat center center;
   background-size: cover;
   max-width: 1200px;
   height: 600px;
   position: relative;
   z-index: 0;
   @include media(mobile) {
-    background: url(../img/home/baner-mob.png);
+    background: url(../img/home/baner-mob.jpg);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
