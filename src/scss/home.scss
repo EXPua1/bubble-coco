@@ -1,10 +1,8 @@
 .home_section {
   background: url(../img/home/baner.png) no-repeat center center;
-  background-size: cover; /* Заполнение секции изображением */
-  max-width: 1200px; /* Минимальная ширина секции */
-  height: 600px; /* Задайте желаемую высоту */
-
-  color: white; /* Цвет текста на секции */
+  background-size: cover;
+  max-width: 1200px;
+  height: 600px;
   position: relative;
   margin-top: -73px !important;
   z-index: 0;
