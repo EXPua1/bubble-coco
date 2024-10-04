@@ -18,6 +18,19 @@
     justify-content: flex-end;
   }
 }
+.burger_menu {
+  display: none;
+  @include media(mobile) {
+    display: block;
+  }
+  @include media(mobileL) {
+    display: block;
+  }
+}
+.burger_menu {
+  height: 40px;
+  width: 40px;
+}
 
 .home_title {
   font-family: 'Baloo 2', sans-serif;
@@ -135,5 +148,53 @@
 /* Для изменения цвета текста при ховере */
 .google_btn:hover .get_btn,
 .google_btn:hover .get_gl {
+  color: #f8f8f8;
+}
+
+// mob menu
+.mob_menu {
+  background-image: url(../img/home/menu.png);
+  position: fixed;
+  top: 0;
+  right: -100%; /* Начальная позиция за экраном */
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.7s ease; /* Анимация для плавного выезда */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mob_menu.active {
+  right: 0;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.mob_btn {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+}
+.mob_btn svg {
+  width: 40px;
+  height: 40px;
+}
+.mob_list {
+  gap: 46px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44444;
   color: #f8f8f8;
 }
