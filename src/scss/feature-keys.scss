@@ -11,12 +11,11 @@
 .feature_section {
   background-image: url(../img/feature-keys/Vector.png);
   position: absolute;
-  top: 560px; /* Расположение секции на 560 пикселей от верхней части */
+  top: 560px;
   left: 50%;
   transform: translateX(-50%);
   background-size: cover;
   width: 100%;
-
   padding-bottom: 40px;
   padding-top: 100px;
   z-index: 1;

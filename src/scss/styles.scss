@@ -19,7 +19,7 @@
 
   @include media(mobile) {
     max-width: $mobile; // 320px
-    padding: 0 20px; // Уменьшение отступа для мобильных
+    padding: 0 16px; // Уменьшение отступа для мобильных
   }
 }
 
