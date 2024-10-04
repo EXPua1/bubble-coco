@@ -22,8 +22,8 @@
     padding: 0 8px; // Уменьшение отступа для мобильных
   }
   @include media(mobileL) {
-    max-width: $mobileL; // 320px
-    padding: 0 8px; // Уменьшение отступа для мобильных
+    max-width: $mobileL; // 360px
+    padding: 0 16px; // Уменьшение отступа для мобильных
   }
 }
 
