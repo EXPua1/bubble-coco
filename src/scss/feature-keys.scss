@@ -6,6 +6,24 @@
   text-transform: uppercase;
   color: #000;
   margin-top: 80px;
+  @include media(mobile) {
+    margin-top: 55px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.47059;
+    text-transform: uppercase;
+    color: #111;
+  }
+  @include media(mobileL) {
+    margin-top: 55px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.47059;
+    text-transform: uppercase;
+    color: #111;
+  }
 }
 
 .feature_section {
@@ -19,6 +37,18 @@
   padding-bottom: 40px;
   padding-top: 100px;
   z-index: 1;
+  @include media(mobile) {
+    background-image: url(../img/feature-keys/Vector-phone.png);
+    background-size: auto;
+    top: 590px;
+    height: 1020px;
+  }
+  @include media(mobileL) {
+    background-image: url(../img/feature-keys/Vector-phone.png);
+    background-size: auto;
+    top: 590px;
+    height: 1020px;
+  }
 }
 
 .feature-list {
@@ -26,6 +56,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  @include media(mobile) {
+    margin-top: 63px;
+  }
+  @include media(mobileL) {
+    margin-top: 63px;
+  }
 }
 
 .feature-item {
@@ -48,6 +84,21 @@
   &:nth-child(even) {
     margin-top: 40px; /* Сдвинуть каждый четный элемент на 20 пикселей вниз */
   }
+  @include media(mobile) {
+    max-width: 140px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 132px;
+    margin-bottom: 10px;
+  }
+  @include media(mobileL) {
+    max-width: 154px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    height: 132px;
+    margin-bottom: 10px;
+  }
 }
 
 .feature-icon {
@@ -55,26 +106,69 @@
   left: 50%;
   top: 2%;
   transform: translate(-50%, -50%);
+  @include media(mobile) {
+    top: 2%;
+  }
+  @include media(mobileL) {
+    top: 2%;
+  }
 }
 
 .feature-title {
   font-family: 'Baloo 2', sans-serif;
   font-weight: 700;
-  font-size: 24px; /* Уменьшите размер шрифта, если необходимо */
+  font-size: 14px; /* Уменьшите размер шрифта, если необходимо */
   line-height: 1.5;
-  text-transform: uppercase;
-  color: #000;
+
   margin: 0; /* Уберите отступы по умолчанию */
+  @include media(mobile) {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 500;
+    font-size: 12px !important;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #ff5b02;
+  }
+  @include media(mobileL) {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    letter-spacing: 0.01em !important;
+  }
 }
 
 .feature-description {
   font-size: 16px; /* Размер шрифта для описания */
   text-align: center; /* Выравнивание текста по центру */
+  @include media(mobile) {
+    font-weight: 300 !important;
+    font-size: 11px !important;
+    line-height: 1.53846 !important;
+    letter-spacing: 0.01em !important;
+    text-align: center !important;
+  }
+  @include media(mobileL) {
+    font-weight: 300 !important;
+    font-size: 13px !important;
+    line-height: 1.53846 !important;
+    letter-spacing: 0.01em !important;
+    text-align: center !important;
+  }
 }
 
 .feature-icon svg {
   width: 120px;
   height: 120px;
+  @include media(mobile) {
+    width: 78px;
+    height: 78px;
+  }
+  @include media(mobileL) {
+    width: 78px;
+    height: 78px;
+  }
 }
 
 .feature-title {

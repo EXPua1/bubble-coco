@@ -10,11 +10,16 @@ screen types:
 */
 @mixin media($screen) {
   @if $screen == mobile {
-    @media (min-width: 320px) and (max-width: 360px) {
+    @media (min-width: 320px) and (max-width: 359px) {
       @content;
     }
   } @else if $screen == desktop {
     @media (min-width: $desktop) {
+      @content;
+    }
+  }
+  @if $screen == mobileL {
+    @media (min-width: 360px) and (max-width: 375px) {
       @content;
     }
   }

@@ -12,6 +12,10 @@
     justify-content: center;
     align-items: center;
   }
+  @include media(mobileL) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .nav-list {
@@ -26,6 +30,9 @@
   color: #fff;
   padding: 19px 0 19px 0;
   @include media(mobile) {
+    display: none;
+  }
+  @include media(mobileL) {
     display: none;
   }
 
@@ -51,6 +58,9 @@
   justify-content: space-between;
   align-items: center;
   @include media(mobile) {
+    padding: 8px;
+  }
+  @include media(mobileL) {
     padding: 8px;
   }
 }
