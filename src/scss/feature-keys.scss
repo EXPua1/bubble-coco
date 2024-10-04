@@ -1,0 +1,104 @@
+.feature_title {
+  font-family: 'Baloo 2', sans-serif; /* Используйте шрифт Baloo 2 */
+  font-weight: 700; /* Жирность шрифта (Bold) */
+  font-size: 48px; /* Размер шрифта */
+  line-height: 72px; /* Высота строки */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+  color: #000; /* Цвет текста */
+  margin-top: 80px;
+}
+.feature_section {
+  background-image: url(../img/feature-keys/Vector.png);
+  position: absolute; /* Позволяет расположить элемент относительно родительского элемента */
+  top: 488px;
+  left: 50%;
+  transform: translateX(-50%); /* Центрирует секцию по горизонтали */
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh + 40px);
+  padding-bottom: 40px;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+.feature-list {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.feature-item {
+  position: relative;
+  border-radius: 12px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 100px;
+  width: 252px;
+  height: 185px;
+  box-shadow: 0 4px 12px 0 rgba(71, 71, 71, 0.16);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  /* Отступ для четных элементов */
+  &:nth-child(even) {
+    margin-top: 40px; /* Сдвинуть каждый четный элемент на 20 пикселей вниз */
+  }
+}
+.feature-icon {
+  position: absolute;
+
+  left: 50%; /* Позиционируем по центру по горизонтали */
+  top: 2%; /* Позиционируем по центру по вертикали */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Сдвигаем на 50% влево и вверх для центрирования */
+}
+
+.feature-title {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 24px; /* Уменьшите размер шрифта, если необходимо */
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0; /* Уберите отступы по умолчанию */
+}
+
+.feature-description {
+  font-size: 16px; /* Размер шрифта для описания */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.feature-icon svg {
+  width: 120px;
+  height: 120px;
+}
+
+// .feature-text {
+//   margin-top: -65px;
+// }
+.feature-title {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.58333;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #ff5b02;
+  text-transform: none;
+}
+.feature-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #111;
+}
