@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers.js","sources":["../src/js/home.js"],"sourcesContent":["const btn = document.querySelector('.btn_js');\nbtn.addEventListener('click', goAppStore);\n\nfunction goAppStore() {\n  window.open(\n    'https://play.google.com/store/apps/details?id=com.cookapps.bubblecoco',\n    '_blank'\n  );\n}\n"],"names":["btn","goAppStore"],"mappings":"ssBAAA,MAAMA,EAAM,SAAS,cAAc,SAAS,EAC5CA,EAAI,iBAAiB,QAASC,CAAU,EAExC,SAASA,GAAa,CACpB,OAAO,KACL,wEACA,QACJ,CACA"}
