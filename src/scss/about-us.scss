@@ -58,35 +58,36 @@
   right: 0;
 }
 
-@include media(mobile) {
-  .about_us_section {
-    flex-direction: column-reverse;
-    width: 360px;
-    height: 605px;
-    top: 1590px;
-    gap: 16px;
-  }
+// @include media(mobile) {
+//   .about_us_section {
+//     flex-direction: column-reverse;
+//     width: 360px;
+//     height: 605px;
+//     top: 1590px;
+//     gap: 16px;
+//   }
 
-  .about_us_content {
-    gap: 16px;
-    width: 328px;
-    height: 228px;
-  }
+//   .about_us_content {
+//     gap: 16px;
+//     width: 328px;
+//     height: 228px;
+//   }
 
-  .about_us_title {
-    line-height: 50px;
-    font-size: 34px;
-  }
+//   .about_us_title {
+//     line-height: 50px;
+//     font-size: 34px;
+//   }
 
-  .img_iphone {
-    width: 328px;
-    height: 281px;
-  }
+//   .img_iphone {
+//     width: 328px;
+//     height: 281px;
+//
+//   }
 
-  .nightmare_ai_icon {
-    display: none;
-  }
-}
+//   .nightmare_ai_icon {
+//     display: none;
+//   }
+// }
 
 @include media(mobileL) {
   .about_us_section {
