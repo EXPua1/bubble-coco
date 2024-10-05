@@ -61,10 +61,8 @@
   flex-direction: row;
   justify-content: flex-start;
   gap: 16px;
-  //   align-items: center;
   min-width: 344px;
   height: 182px;
-  //   margin: 0 12px;
   padding: 16px;
   background: #fff;
   border-radius: 12px;
@@ -99,4 +97,135 @@
   font-size: 16px;
   line-height: 24px;
   color: #111;
+}
+
+@include media(mobileL) {
+  .reviews_section {
+    width: 100%;
+    height: 854px;
+    top: 2640px;
+    gap: 24px;
+    background: url('../img/reviews/nightmare-ai-enhanced111-min2.png')
+      no-repeat center center;
+  }
+
+  .reviews_content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    height: auto;
+  }
+
+  .reviews_title {
+    width: 100%;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  .review_arrows {
+    display: none;
+  }
+
+  .reviews_wrapper {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .reviews_list {
+    flex-direction: column;
+    gap: 20px;
+    transform: none;
+  }
+
+  .review_card {
+    min-width: 290px;
+    width: 328px;
+    height: 124px;
+  }
+
+  .review_textblock {
+    width: 212px;
+    height: 92px;
+    text-align: left;
+  }
+
+  .review_name {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin-bottom: 8px;
+  }
+
+  .review_text {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+}
+
+@include media(mobile) {
+  .reviews_section {
+    width: 100%;
+    height: 854px;
+    top: 2640px;
+    gap: 24px;
+    background: url('../img/reviews/nightmare-ai-enhanced111-min2.png')
+      no-repeat center center;
+  }
+
+  .reviews_content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    height: auto;
+  }
+
+  .reviews_title {
+    width: 100%;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  .review_arrows {
+    display: none;
+  }
+
+  .reviews_wrapper {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .reviews_list {
+    flex-direction: column;
+    gap: 20px;
+    transform: none;
+  }
+
+  .review_card {
+    min-width: 270px;
+    width: 304px;
+    height: 124px;
+    padding: 8px;
+  }
+
+  .review_textblock {
+    width: 202px;
+    height: 92px;
+    text-align: left;
+  }
+
+  .review_name {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin-bottom: 8px;
+  }
+
+  .review_text {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
 }
