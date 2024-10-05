@@ -14,29 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
       .setAttribute(
         'href',
         currentIndex === 0
-          ? './img/sprite.svg#icon-left-off'
-          : './img/sprite.svg#icon-left-on'
+          ? './img/sprite.svg#icon_left_Off'
+          : './img/sprite.svg#icon_left_On'
       );
     rightArrow
       .querySelector('use')
       .setAttribute(
         'href',
         currentIndex === maxIndex
-          ? './img/sprite.svg#icon-right-off'
-          : './img/sprite.svg#icon-right-on'
+          ? './img/sprite.svg#icon_right_Off'
+          : './img/sprite.svg#icon_right_On'
       );
   }
-
-  // function updateArrows() {
-  //   leftArrow.src =
-  //     currentIndex === 0
-  //       ? '../img/reviews/icon_left_Off.svg'
-  //       : '../img/reviews/icon_left_On.svg';
-  //   rightArrow.src =
-  //     currentIndex === maxIndex
-  //       ? '../img/reviews/icon_right_Off.svg'
-  //       : '../img/reviews/icon_right_On.svg';
-  // }
 
   rightArrow.addEventListener('click', function () {
     if (currentIndex < maxIndex) {
