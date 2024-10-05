@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     leftArrow
       .querySelector('use')
       .setAttribute(
-        'xlink:href',
+        'href',
         currentIndex === 0
           ? './img/sprite.svg#icon-left-off'
           : './img/sprite.svg#icon-left-on'
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     rightArrow
       .querySelector('use')
       .setAttribute(
-        'xlink:href',
+        'href',
         currentIndex === maxIndex
           ? './img/sprite.svg#icon-right-off'
           : './img/sprite.svg#icon-right-on'
