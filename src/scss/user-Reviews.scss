@@ -1,0 +1,102 @@
+.reviews_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  top: 2687px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 454px;
+  max-width: 1200px;
+  background: url('../img/reviews/nightmare-ai-enhanced111-min.png') no-repeat
+    center center;
+  background-size: cover;
+}
+
+.reviews_content {
+  display: flex;
+  width: 100%;
+  height: 72px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews_title {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.review_arrows {
+  display: flex;
+  gap: 20px;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+
+.reviews_wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.reviews_list {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.5s ease;
+}
+
+.review_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+  //   align-items: center;
+  min-width: 344px;
+  height: 182px;
+  //   margin: 0 12px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user_image {
+  width: 68px;
+  height: 70px;
+  border-radius: 12px;
+  float: left;
+}
+
+.review_textblock {
+  width: 235px;
+  height: 150px;
+}
+
+.review_name {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ff5b02;
+  margin-bottom: 16px;
+}
+
+.review_text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111;
+}
