@@ -19,7 +19,7 @@ screen types:
     }
   }
   @if $screen == mobileL {
-    @media (min-width: 360px) and (max-width: 375px) {
+    @media (min-width: 360px) and (max-width: 425px) {
       @content;
     }
   }
