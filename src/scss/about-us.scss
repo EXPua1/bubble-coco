@@ -1,0 +1,121 @@
+.about_us_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 116px;
+  position: absolute;
+  width: 1200px;
+  height: 543px;
+  top: 1442px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url('../img/about-us/nightmare-ai-enhanced222.png') no-repeat
+    center center;
+  background-size: cover;
+  z-index: 0;
+}
+.about_us_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  width: 528px;
+  height: 199px;
+}
+
+.about_us_title {
+  text-align: left;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about_us_description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #fff;
+}
+
+.img_iphone {
+  width: 436px;
+  height: 383px;
+}
+
+.nightmare_ai_icon {
+  position: absolute;
+  width: 185px;
+  height: 181px;
+  bottom: 0;
+  right: 0;
+}
+
+// @include media(mobile) {
+//   .about_us_section {
+//     flex-direction: column-reverse;
+//     width: 360px;
+//     height: 605px;
+//     top: 1590px;
+//     gap: 16px;
+//   }
+
+//   .about_us_content {
+//     gap: 16px;
+//     width: 328px;
+//     height: 228px;
+//   }
+
+//   .about_us_title {
+//     line-height: 50px;
+//     font-size: 34px;
+//   }
+
+//   .img_iphone {
+//     width: 328px;
+//     height: 281px;
+//
+//   }
+
+//   .nightmare_ai_icon {
+//     display: none;
+//   }
+// }
+
+@include media(mobileL) {
+  .about_us_section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 360px;
+    height: 605px;
+    top: 1590px;
+    gap: 16px;
+  }
+
+  .about_us_content {
+    // margin-top: 40px;
+    gap: 16px;
+    width: 328px;
+    height: 228px;
+  }
+
+  .about_us_title {
+    line-height: 50px;
+    font-size: 34px;
+  }
+
+  .img_iphone {
+    width: 328px;
+    height: 281px;
+  }
+
+  .nightmare_ai_icon {
+    display: none;
+  }
+}
