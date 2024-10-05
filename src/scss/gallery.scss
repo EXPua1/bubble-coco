@@ -77,3 +77,29 @@
     height: 300px;
   }
 }
+
+@include media(mobile) {
+  .gallery_section {
+    width: 360px;
+    height: 493px;
+    top: 2165px;
+  }
+
+  .gallery_title {
+    margin-top: 60px;
+    margin-bottom: 24px;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  .gallery_images_wrapper {
+    gap: 20px;
+    width: 200%;
+    width: calc(180px * 14 + 20px * 13);
+  }
+
+  .gallery_image {
+    width: 180px;
+    height: 300px;
+  }
+}
