@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .setAttribute(
         'href',
         currentIndex === maxIndex
-          ? '/img/sprite.svg#icon_right_Off'
+          ? '../img/sprite.svg#icon_right_Off'
           : '/img/sprite.svg#icon_right_On'
       );
   }
