@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .setAttribute(
         'href',
         currentIndex === 0
-          ? '/img/sprite.svg#icon_left_Off'
+          ? '../../img/sprite.svg#icon_left_Off'
           : '/img/sprite.svg#icon_left_On'
       );
     rightArrow
