@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'href',
         currentIndex === 0
           ? './img/sprite.svg#icon_left_Off'
-          : '/img/sprite.svg#icon_left_On'
+          : './img/sprite.svg#icon_left_On'
       );
     rightArrow
       .querySelector('use')
