@@ -1,7 +1,5 @@
-/* gallery.scss */
 .gallery_section {
   position: absolute;
-  // width: 1200px;
   width: 100%;
   height: 778px;
   top: 1949px;
@@ -45,13 +43,10 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      calc(-252px * 7 - 24px * 6)
-    ); /* Adjusted for 7 images */
+    transform: translateX(calc(-252px * 7 - 24px * 6));
   }
 }
 
-/* Responsive Design Considerations */
 @include media(mobileL) {
   .gallery_section {
     width: 360px;
