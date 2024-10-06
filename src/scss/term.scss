@@ -1,0 +1,141 @@
+// Terms and Conditions Styles
+
+.therd {
+  background-color: #fffbe6;
+}
+
+.term-page {
+  .header_privacy {
+    background: rgba(18, 19, 31, 0.6);
+    border-bottom: 1px solid #ff5b02;
+  }
+
+  .back_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pr_btn {
+    border: none;
+    background-color: transparent;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+  }
+
+  .back_descr {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+  }
+}
+
+.terms_section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.terms_container {
+  max-width: 1201px;
+  padding: 80px 244px;
+  margin: 0 auto;
+}
+
+.terms_title {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ff5b02;
+  margin-bottom: 40px;
+}
+
+.terms_content {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.terms_subtitle {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ff5b02;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.terms_content p {
+  margin-bottom: 16px;
+}
+
+// Footer styles (if not already defined in a global stylesheet)
+footer {
+  background: #114232;
+  padding: 80px 0;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  margin-bottom: 40px;
+  color: #fff;
+
+  a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.rights_container {
+  text-align: center;
+}
+
+.rights {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+// Responsive adjustments
+@include media(mobile) {
+  .terms_container {
+    padding: 40px 20px;
+  }
+
+  .terms_title {
+    font-size: 20px;
+  }
+
+  .terms_subtitle {
+    font-size: 18px;
+  }
+
+  .footer_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
