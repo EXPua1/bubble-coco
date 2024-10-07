@@ -29,8 +29,7 @@
   max-width: 1200px;
   width: 100%;
 }
-.priv_section {
-}
+
 .priv_back_descr {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -38,6 +37,7 @@
   line-height: 26px;
   color: #fff;
 }
+
 .priv_pri_title {
   font-family: 'Baloo 2', sans-serif;
   font-weight: 700;
@@ -49,6 +49,7 @@
   color: #ff5b02;
   margin-bottom: 40px;
 }
+
 .priv_pri_s_title {
   font-family: 'Baloo 2', sans-serif;
   font-weight: 500;
@@ -103,10 +104,6 @@
   gap: 32px;
   justify-content: end;
   margin-right: 60px;
-
-  @include media(mobile) {
-    font-size: 13px;
-  }
 }
 
 .priv_footer_list a:hover {
@@ -118,13 +115,114 @@
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-  @include media(mobile) {
-    font-size: 13px;
-  }
 }
 
 .priv_rights_container {
   display: flex;
   margin-top: 40px;
   justify-content: center;
+}
+
+@include media(mobileL) {
+  .header_priv {
+    max-width: 360px;
+    padding-left: 16px;
+  }
+
+  .priv_container {
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .first {
+    max-width: 360px;
+  }
+
+  .priv_pri_title {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  .priv_desc_list {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .priv_pri_s_title {
+    font-size: 18px;
+  }
+
+  .priv_footer {
+    height: 136px;
+    margin-top: 40px;
+  }
+
+  .priv_footer_list {
+    font-size: 13px;
+    padding-top: 30px;
+    margin-right: 45px;
+  }
+  .priv_rights {
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .priv_rights_container {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
+}
+
+@include media(mobile) {
+  .header_priv {
+    max-width: 320px;
+    padding-left: 16px;
+  }
+
+  .priv_container {
+    padding-top: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .first {
+    max-width: 320px;
+  }
+
+  .priv_pri_title {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  .priv_desc_list {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .priv_pri_s_title {
+    font-size: 16px;
+  }
+
+  .priv_footer {
+    height: 136px;
+    margin-top: 40px;
+  }
+
+  .priv_footer_list {
+    font-size: 13px;
+    padding-top: 30px;
+    margin-right: 23px;
+  }
+  .priv_rights {
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .priv_rights_container {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
 }

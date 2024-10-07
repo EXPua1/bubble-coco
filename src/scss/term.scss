@@ -31,9 +31,6 @@
   width: 100%;
 }
 
-.privacy_section {
-}
-
 .back_descr {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -63,6 +60,16 @@
   color: #ff5b02;
   margin-top: 32px;
   margin-bottom: 16px;
+}
+
+.descr_f {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #000;
+  text-transform: uppercase;
 }
 
 .descr_s,
@@ -100,10 +107,6 @@ footer {
   gap: 32px;
   justify-content: end;
   margin-right: 60px;
-
-  @include media(mobile) {
-    font-size: 13px;
-  }
 }
 
 .priv_footer_list a:hover {
@@ -115,13 +118,114 @@ footer {
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-  @include media(mobile) {
-    font-size: 13px;
-  }
 }
 
 .rights_container {
   display: flex;
   margin-top: 40px;
   justify-content: center;
+}
+
+@include media(mobileL) {
+  .header_privacy {
+    max-width: 360px;
+    padding-left: 16px;
+  }
+
+  .privacy_container {
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .second {
+    max-width: 360px;
+  }
+
+  .pri_title {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  .desc_list {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .pri_s_title {
+    font-size: 18px;
+  }
+
+  footer {
+    height: 136px;
+    margin-top: 40px;
+  }
+
+  .footer_list {
+    font-size: 13px;
+    padding-top: 30px;
+    margin-right: 45px;
+  }
+  .rights {
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .rights_container {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
+}
+
+@include media(mobile) {
+  .header_privacy {
+    max-width: 320px;
+    padding-left: 16px;
+  }
+
+  .privacy_container {
+    padding-top: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .second {
+    max-width: 320px;
+  }
+
+  .pri_title {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  .desc_list {
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .pri_s_title {
+    font-size: 16px;
+  }
+
+  footer {
+    height: 136px;
+    margin-top: 40px;
+  }
+
+  .footer_list {
+    font-size: 13px;
+    padding-top: 30px;
+    margin-right: 23px;
+  }
+  .rights {
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .rights_container {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
 }
