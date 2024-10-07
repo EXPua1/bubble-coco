@@ -6,9 +6,21 @@
 .header_container {
 }
 .container {
-  max-width: 1200px;
+  max-width: 1200px; // Ограничение для контента
   margin: 0 auto;
   padding: 0 60px;
+
+  @include media(mobile) {
+    max-width: $mobile; // 320px
+    padding: 0 8px;
+    margin: 0 auto;
+  }
+
+  @include media(mobileL) {
+    max-width: $mobileL; // 360px
+    padding: 0 16px;
+    margin: 0 auto;
+  }
 }
 .pr_btn {
   border: none;
@@ -37,6 +49,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 22px;
+  line-height: 26px;
   color: #fff;
 }
 
@@ -132,6 +145,7 @@ footer {
 
 @include media(mobileL) {
   .header_privacy {
+    padding-left: 16px;
   }
 
   .privacy_container {
@@ -165,7 +179,8 @@ footer {
   .footer_list {
     font-size: 13px;
     padding-top: 30px;
-    margin-right: 45px;
+    margin-right: 0;
+    justify-content: center;
   }
   .rights {
     font-weight: 300;
@@ -214,7 +229,8 @@ footer {
   .footer_list {
     font-size: 13px;
     padding-top: 30px;
-    margin-right: 23px;
+    margin-right: 0;
+    justify-content: center;
   }
   .rights {
     font-weight: 300;
