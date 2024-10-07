@@ -48,3 +48,56 @@ function closeOnEscape(event) {
     closeMob(); // Закрыть меню
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.mob_link, .nav-list_item a'); // Ссылки из модального окна и хедера
+
+  // Объекты для хранения отступов для каждой секции
+  const mobileOffsets = {
+    home: 0,
+    features: 150,
+    about: 350,
+    gallery: 150,
+    reviews: 100,
+  };
+
+  const desktopOffsets = {
+    home: 70,
+    features: 300,
+    about: 250,
+    gallery: 150,
+    reviews: 150,
+  };
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault(); // Отключаем стандартное поведение якоря
+      const targetID = link.getAttribute('href').substring(1); // Получаем ID секции (без #)
+      const targetSection = document.getElementById(targetID); // Находим секцию по ID
+
+      if (targetSection) {
+        // Если клик был по мобильной ссылке — закрываем меню
+        if (link.classList.contains('mob_link')) {
+          closeMob();
+        }
+
+        // Определяем, какой объект отступов использовать
+        const offsets =
+          window.innerWidth <= 1200 ? mobileOffsets : desktopOffsets;
+
+        // Получаем отступ для текущей секции
+        const offset = offsets[targetID] || 0;
+
+        const sectionPosition =
+          targetSection.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+          top: sectionPosition,
+          behavior: 'smooth',
+        });
+      } else {
+        console.error(`Section with ID "${targetID}" not found`);
+      }
+    });
+  });
+});
